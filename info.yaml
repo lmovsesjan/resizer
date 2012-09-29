@@ -1,0 +1,12 @@
+name: resizer
+description: super scalable distributed fault tolerant image resizer
+type: python
+
+depends:
+  - cocaine-framework-python
+
+drivers:
+  resize:
+    type: native-server
+    emit: resize
+    endpoint: tcp://*:9901
