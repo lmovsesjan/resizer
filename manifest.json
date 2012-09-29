@@ -1,0 +1,16 @@
+{
+    "type" : "python",
+    "engine" : {
+        "heartbeat-timeout" : 300,
+        "pool-limit" : 5,
+        "queue-limit" : 250,
+        "startup-timeout" : 1800
+    },
+    "drivers" : {
+        "resize" : {
+            "type" : "native-server",
+            "emit": "resize",
+            "endpoint": "tcp://*:9901"
+        }
+    }
+}
